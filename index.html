@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Crystal Collector Jumbotron -->
+    <div class="container">
+        <div class="jumbotron" style="background-color: purple; color: white;">
+            <div class="container">
+                <h1 class="text-center"><strong>Crystal Collector</strong></h1>
+
+            </div>
+
+        </div>
+        <!-- Instructions -->
+        <div class="row">
+
+            <!-- Instructions Container -->
+            <div class="col-lg-12">
+
+                <div class="card" style="width: 69rem;">
+                    <div class="card-header text-center" style="background-color:blue; color:white;">
+                        Featured
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Click on each of the crystals to work your way up to the target
+                            score and match it's number. Each crystal has a different value. You
+                            lose if you pass the target score so be careful.
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- The Target Score Portion -->
+            <div class="col-lg-3 p-3">
+                <div class="card" style="width: 16rem;">
+                    <div class="card-header text-center" style="background-color:blue; color:white;">
+                        Target Score
+                    </div>
+                    <div>
+                        <ul class=" list-group list-group-flush">
+                            <h3 class="list-group-item text-center" id="targetScore"></h3>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--  The Your Score Portion -->
+            <div class="col-lg-3 p-3">
+                <div class="card" style="width: 16rem;">
+                    <div class="card-header text-center" style="background-color:blue; color:white;">
+                        Your Score
+                    </div>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <h3 class="list-group-item text-center" id="yourScore"></h3>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--  Crystals -->
+            <div class="col-lg-3 p-3">
+                <div class="card" style="width: 33rem;">
+                    <div class="card-header text-center" style="background-color:blue; color:white;">
+                        Crystal Selection
+                    </div>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <div class="row">
+                                <div class="col-lg text-center">
+                                    <img src="assets/images/greenCrystal.jpg" alt="Green Crystal" id="green"
+                                        style="height:5rem; width:5rem;">
+                                    <img src="assets/images/blueCrystal.jpg" alt="Blue Crystal" id="blue"
+                                        style="height:5rem; width:5rem;">
+                                    <img src="assets/images/redCrystal.jpg" alt="Red Crystal" id="red"
+                                        style="height:5rem; width:5rem;">
+                                    <img src="assets/images/yellowCrystal.jpg" alt="Yellow Crystal" id="yellow"
+                                        style="height:5rem; width:5rem;">
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Counters Row -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card" style="width: 34rem;">
+                    <div class="card-header text-center" style="background-color:blue; color:white;">
+                        Win Count
+                    </div>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <h3 class="list-group-item text-center" id="winCount">0</h3>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="card" style="width: 33rem;">
+                    <div class="card-header text-center" style="background-color:blue; color:white;">
+                        Loss Count
+                    </div>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            <h3 class="list-group-item text-center" id="lossCount">0</h3>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!--jquery source -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Javascript Source -->
+    <script src="assets/javascript/CrystalCollector.js"></script>
+</body>
+
+</html>
